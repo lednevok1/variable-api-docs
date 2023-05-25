@@ -90,7 +90,7 @@ ModuleManager.removeModules([module1, module2]);
 
 **Аргументы:** нет
 
-**Возвращает:** String[] moduleNames
+**Возвращает:** `String[] moduleNames`
 
 **Пример:**
 ```js
