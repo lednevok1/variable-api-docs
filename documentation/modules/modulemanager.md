@@ -60,3 +60,25 @@ var module = new Module("АвтоЛава", true, true, ModuleCategory.PLAYER); 
 ModuleManager.removeModule(module);
 ```
 </details>
+
+## `ModuleManager.removeModules(Module[] modules)`
+**Описание:** удаляет модули из меню клиента
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+
+| Аргумент | Значение |
+| -------- | -------- |
+| Module[] modules | Массив модулей |
+
+**Возвращает:** нет
+
+**Пример:**
+```js
+var module1 = new Module("Подбор пароля", true, true, ModuleCategory.MISC); ModuleManager.addModule(module1);
+var module2 = new Module("Поиск эксплойтов", true, true, ModuleCategory.MISC); ModuleManager.addModule(module2);
+
+ModuleManager.removeModules([module1, module2]);
+```
+</details>
