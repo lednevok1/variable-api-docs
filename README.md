@@ -13,3 +13,12 @@
 * [Настройка (выключатель) модуля (statesetting.md)](documentation/modules/statesetting.md)
 
 ## Гиперссылки: игра
+* [Мир (level.md)](documentation/game/level.md)
+* [Блок (block.md)](documentation/game/block.md)
+* [Инвентарь (inventory.md)](documentation/game/inventory.md)
+* [Предмет (item.md)](documentation/game/item.md)
+* [Игрок (player.md)](documentation/game/player.md)
+* [Игрок (локальный) (localplayer.md)](documentation/game/localplayer.md)
+
+## Гиперссылки: другое
+* [title (file.md)](link)
