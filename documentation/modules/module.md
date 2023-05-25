@@ -130,3 +130,52 @@ module.addSetting(setting);
 module.hasSettings(); // true
 ```
 </details>
+
+## `Module module.getSetting(String settingName);`
+**Описание:** даёт настройку модуля
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+
+| Аргумент | Значение |
+| -------- | -------- |
+| String settingName | Название настройки |
+
+**Возвращает:** `(Mode, Button, Slider, State, TextField)Setting setting`
+
+**Пример:**
+```js
+var module = new Module("Буллинг при убийстве", false, true, ModuleCategory.PLAYER);
+
+module.getSetting("Шутить про мамку"); // RuntimeException, потому что нету НИКАКИХ настроек
+
+var setting = new StateSetting("Шутить про мамку", true);
+module.addSetting(setting);
+
+module.getSettings("Шутить про мамку"); // true
+module.getSettings("Шутить про мамку админа"); // false
+```
+</details>
+
+## `Module module.getSettings();`
+**Описание:** даёт настройки модуля
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:** нет
+
+**Возвращает:** `(Mode, Button, Slider, State, TextField)Setting[] settings`
+
+**Пример:**
+```js
+var module = new Module("Буллинг при убийстве", false, true, ModuleCategory.PLAYER);
+
+module.getSettings(); // []
+
+var setting = new StateSetting("Шутить про мамку", true);
+module.addSetting(setting);
+
+module.getSettings(); // [StateSetting("Шутить про мамку", true)]
+```
+</details>
