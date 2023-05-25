@@ -3,5 +3,13 @@
 
 \* Variable - мод-клиент MCPE v1.1.5 (майнкрафт с фокусами)
 
-## Гиперссылки
-* [Менеджер модулей (modulemanager.md)](documentation/modulemanager.md)
+## Гиперссылки: модули
+* [Менеджер модулей (modulemanager.md)](documentation/modules/modulemanager.md)
+* [Модуль (module.md)](documentation/modules/module.md)
+* [Настройка модуля (setting.md)](documentation/modules/setting.md)
+* [Настройка (кнопка) модуля (buttonsetting.md)](documentation/modules/buttonsetting.md)
+* [Настройка (селектор) модуля (modesetting.md)](documentation/modules/modesetting.md)
+* [Настройка (слайдер) модуля (slidersetting.md)](documentation/modules/slidersetting.md)
+* [Настройка (выключатель) модуля (statesetting.md)](documentation/modules/statesetting.md)
+
+## Гиперссылки: игра
