@@ -124,7 +124,7 @@ module.hasSettings(); // false
 
 var setting = new ButtonSetting("Запуск", function(view) {
     // Ещё не сделано ¯\_(ツ)_/¯
-})
+});
 module.addSetting(setting);
 
 module.hasSettings(); // true
