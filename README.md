@@ -21,4 +21,8 @@
 * [Игрок (локальный) (localplayer.md)](documentation/game/localplayer.md)
 
 ## Гиперссылки: другое
-* [title (file.md)](link)
+* [Глобальные функции (globals.md)](documentation/other/globals.md)
+* [Данные (data.md)](documentation/other/data.md)
+* [Хуки (ивенты) (hooks.md)](documentation/other/hooks.md)
+* [Константные классы (constants.md)](documentation/other/constants.md)
+* [Память (ассемблер) (memory.md)](documentation/other/memory.md)
