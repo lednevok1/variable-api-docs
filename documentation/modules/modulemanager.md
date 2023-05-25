@@ -7,7 +7,7 @@
 **Аргументы:**
 
 | Аргумент | Значение |
-| ------------- | ------------- |
+| -------- | -------- |
 | Module module | Модуль |
 
 **Возвращает:** нет
@@ -27,36 +27,36 @@ ModuleManager.addModule(module);
 **Аргументы:**
 
 | Аргумент | Значение |
-| ------------- | ------------- |
+| -------- | -------- |
 | Module[] modules | Массив модулей |
 
 **Возвращает:** нет
 
 **Пример:**
 ```js
-var module1 = new Module("Подбор пароля", true, true, ModuleCategory.PLAYER);
+var module1 = new Module("Подбор пароля", true, true, ModuleCategory.MISC);
 var module2 = new Module("Поиск эксплойтов", true, true, ModuleCategory.MISC);
 ModuleManager.addModules([module1, module2]);
 ```
 </details>
 
-## `ModuleManager.addModules(Module[] modules)`
-**Описание:** добавляет модули в меню клиента
+## `ModuleManager.removeModule(Module module)`
+**Описание:** удаляет модуль из меню клиента
 <details>
 <summary>Доп. информация</summary>
 
 **Аргументы:**
 
 | Аргумент | Значение |
-| ------------- | ------------- |
-| Module[] modules | Массив модулей |
+| -------- | -------- |
+| Module module | Модуль |
 
 **Возвращает:** нет
 
 **Пример:**
 ```js
-var module1 = new Module("Подбор пароля", true, true, ModuleCategory.PLAYER);
-var module2 = new Module("Поиск эксплойтов", true, true, ModuleCategory.MISC);
-ModuleManager.addModules([module1, module2]);
+var module = new Module("АвтоЛава", true, true, ModuleCategory.PLAYER); ModuleManager.addModule(module);
+
+ModuleManager.removeModule(module);
 ```
 </details>
