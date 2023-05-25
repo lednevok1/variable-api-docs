@@ -15,6 +15,7 @@
 **Пример:**
 ```js
 var module = new Module("АвтоЛава", true, true, ModuleCategory.PLAYER);
+
 ModuleManager.addModule(module);
 ```
 </details>
@@ -36,6 +37,7 @@ ModuleManager.addModule(module);
 ```js
 var module1 = new Module("Подбор пароля", true, true, ModuleCategory.MISC);
 var module2 = new Module("Поиск эксплойтов", true, true, ModuleCategory.MISC);
+
 ModuleManager.addModules([module1, module2]);
 ```
 </details>
