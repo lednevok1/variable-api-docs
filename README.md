@@ -5,5 +5,4 @@
 
 ## Гиперссылки
 
-* [ModuleManager (modulemanager.md)](https://github.com/lednevok1/variable-api-docs/blob/main/documentation/modulemanager.md)
 * [ModuleManager (modulemanager.md)](documentation/modulemanager.md)
