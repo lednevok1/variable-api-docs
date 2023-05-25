@@ -11,6 +11,7 @@
 * [Настройка (селектор) модуля (modesetting.md)](documentation/modules/modesetting.md)
 * [Настройка (слайдер) модуля (slidersetting.md)](documentation/modules/slidersetting.md)
 * [Настройка (выключатель) модуля (statesetting.md)](documentation/modules/statesetting.md)
+* [Настройка (текст. поле) модуля (textfieldsetting.md)](documentation/modules/textdieldsetting.md)
 
 ## Гиперссылки: игра
 * [Мир (level.md)](documentation/game/level.md)
