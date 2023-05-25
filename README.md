@@ -4,5 +4,4 @@
 \* Variable - мод-клиент MCPE v1.1.5 (майнкрафт с фокусами)
 
 ## Гиперссылки
-
 * [ModuleManager (modulemanager.md)](documentation/modulemanager.md)
