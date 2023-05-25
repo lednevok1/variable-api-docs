@@ -82,3 +82,18 @@ var module2 = new Module("Поиск эксплойтов", true, true, ModuleCa
 ModuleManager.removeModules([module1, module2]);
 ```
 </details>
+
+## `ModuleManager.getModuleNames()`
+**Описание:** даёт названия всех модулей в меню клиента
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:** нет
+
+**Возвращает:** массив с названиями модулей
+
+**Пример:**
+```js
+ModuleManager.getModuleNames(); // AimBot, AntiBot... Script manager
+```
+</details>
