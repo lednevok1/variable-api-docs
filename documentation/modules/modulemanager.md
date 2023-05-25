@@ -13,7 +13,7 @@
 **Возвращает:** нет
 
 **Пример:**
-```
+```js
 var module = new Module("AutoLava", true, true, ModuleCategory.PLAYER);
 ModuleManager.addModule(module);
 ```
