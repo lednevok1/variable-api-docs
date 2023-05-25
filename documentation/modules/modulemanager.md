@@ -1,5 +1,5 @@
 # ModuleManager: методы
-## `ModuleManager.addModule(Module module)`
+## `ModuleManager.addModule(Module module);`
 **Описание:** добавляет модуль в меню клиента
 <details>
 <summary>Доп. информация</summary>
@@ -19,7 +19,7 @@ ModuleManager.addModule(module);
 ```
 </details>
 
-## `ModuleManager.addModules(Module[] modules)`
+## `ModuleManager.addModules(Module[] modules);`
 **Описание:** добавляет модули в меню клиента
 <details>
 <summary>Доп. информация</summary>
@@ -40,7 +40,7 @@ ModuleManager.addModules([module1, module2]);
 ```
 </details>
 
-## `ModuleManager.removeModule(Module module)`
+## `ModuleManager.removeModule(Module module);`
 **Описание:** удаляет модуль из меню клиента
 <details>
 <summary>Доп. информация</summary>
@@ -61,7 +61,7 @@ ModuleManager.removeModule(module);
 ```
 </details>
 
-## `ModuleManager.removeModules(Module[] modules)`
+## `ModuleManager.removeModules(Module[] modules);`
 **Описание:** удаляет модули из меню клиента
 <details>
 <summary>Доп. информация</summary>
@@ -83,7 +83,7 @@ ModuleManager.removeModules([module1, module2]);
 ```
 </details>
 
-## `ModuleManager.getModuleNames()`
+## `ModuleManager.getModuleNames();`
 **Описание:** даёт названия всех модулей в меню клиента
 <details>
 <summary>Доп. информация</summary>
