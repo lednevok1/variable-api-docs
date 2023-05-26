@@ -263,7 +263,7 @@ module.setOnToggleListener(function(view, isActive) {
 ```js
 var module = new Module("СамоБан", false, true, ModuleCategory.OTHER);
 
-module.setOnClickListener(function() {
+module.setOnToggleListener(function() {
     LocalPlayer.sendChatMessage("/ban " + LocalPlayer.getNameTag()); // код скорее всего не сработает
 }); // Функция будет вызвана, когда произойдёт активация модуля
 ```
@@ -273,3 +273,140 @@ module.setOnClickListener(function() {
 
 
 # Модуль: методы (статические)
+**Примечание:** в данном статические модули отличаются от обычных тем, что они требуют передачи (активности) модуля как аргумента функции
+
+## `Module.isToggleable(String moduleName);`
+**Описание:** определяет, можно ли включить модуль
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+| Аргумент | Значение |
+| -------- | -------- |
+| String moduleName | Название модуля |
+
+**Возвращает:** `Boolean isToggleable`
+
+**Пример:**
+```js
+
+```
+</details>
+
+## `Module.isBindable(String moduleName);`
+**Описание:** определяет, можно ли забиндить модуль
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+| Аргумент | Значение |
+| -------- | -------- |
+| String moduleName | Название модуля |
+
+**Возвращает:** `Boolean isBindable`
+
+**Примеры:**
+```js
+var module = new Module("АдминЧекер", true, true, ModuleCategory.MISC);
+
+Module.isBindable("АдминЧекер"); // true
+```
+```js
+var module = new Module("UI-картинка", true, false, ModuleCategory.MISC);
+
+Module.isBindable("UI-картинка"); // false
+```
+</details>
+
+## `Module.getCategory(String moduleName);`
+**Описание:** определяет категорию модуля
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+| Аргумент | Значение |
+| -------- | -------- |
+| String moduleName | Название модуля |
+
+**Возвращает:** `String categoryName`
+
+**Примеры:**
+```js
+var module = new Module("Краш", true, true, ModuleCategory.OTHER);
+
+Module.getCategory("Краш"); // "Other"
+```
+</details>
+
+## `Module.isActive(String moduleName);`
+**Описание:** определяет, включён ли модуль
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+| Аргумент | Значение |
+| -------- | -------- |
+| String moduleName | Название модуля |
+
+**Возвращает:** `Boolean isActive`
+
+**Пример:** нет
+</details>
+
+## `Module.isBindActive(String moduleName);`
+**Описание:** определяет, можно ли включить модуль
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+| Аргумент | Значение |
+| -------- | -------- |
+| String moduleName | Название модуля |
+
+**Возвращает:** `Boolean isBindActive`
+
+**Пример:** нет
+</details>
+
+## `Module.isBindActive(String moduleName);`
+**Описание:** определяет, можно ли включить модуль
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+| Аргумент | Значение |
+| -------- | -------- |
+| String moduleName | Название модуля |
+
+**Возвращает:** `Boolean isBindActive`
+
+**Пример:** нет
+</details>
+
+## `Module.hasSettings(String moduleName);`
+**Описание:** определяет, есть ли настройки у модуля
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+| Аргумент | Значение |
+| -------- | -------- |
+| String moduleName | Название модуля |
+
+**Возвращает:** `Boolean hasSettings`
+
+**Пример:**
+```js
+var module = new Module("Уничтожитель телефона", false, true, ModuleCategory.OTHER);
+
+module.hasSettings(); // false
+
+var setting = new ButtonSetting("Запуск", function(view) {
+    // Ещё не сделано ¯\_(ツ)_/¯
+});
+module.addSetting(setting);
+
+module.hasSettings(); // true
+```
+</details>
+
