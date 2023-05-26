@@ -153,8 +153,8 @@ module.getSetting("Шутить про мамку"); // RuntimeException, пот
 var setting = new StateSetting("Шутить про мамку", true);
 module.addSetting(setting);
 
-module.getSettings("Шутить про мамку"); // true
-module.getSettings("Шутить про мамку админа"); // false
+module.getSetting("Шутить про мамку"); // true
+module.getSetting("Шутить про мамку админа"); // false
 ```
 </details>
 
