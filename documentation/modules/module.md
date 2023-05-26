@@ -263,7 +263,7 @@ module.setOnToggleListener(function(view, isActive) {
 ```js
 var module = new Module("СамоБан", false, true, ModuleCategory.OTHER);
 
-module.setOnToggleListener(function() {
+module.setOnClickListener(function() {
     LocalPlayer.sendChatMessage("/ban " + LocalPlayer.getNameTag()); // код скорее всего не сработает
 }); // Функция будет вызвана, когда произойдёт активация модуля
 ```
