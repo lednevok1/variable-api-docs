@@ -1,4 +1,4 @@
-# ModuleManager: методы
+# ModuleManager: методы (статические)
 ## `ModuleManager.addModule(Module module);`
 **Описание:** добавляет модуль в меню клиента
 <details>
