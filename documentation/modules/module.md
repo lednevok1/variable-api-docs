@@ -410,3 +410,27 @@ module.hasSettings(); // true
 ```
 </details>
 
+## `Module.getSettingNames(String moduleName);`
+**Описание:** даёт названия всех настроек модуля
+<details>
+<summary>Доп. информация</summary>
+
+**Аргументы:**
+| Аргумент | Значение |
+| -------- | -------- |
+| String moduleName | Название модуля |
+
+**Возвращает:** `String[] settingNames`
+
+**Пример:**
+```js
+var module = new Module("What you know about rolling down in the deep", false, false, ModuleCategory.OTHER);
+
+module.getSettingNames(); // []
+
+var setting = new StateSetting("When your brain goes numb", true);
+module.addSetting(setting);
+
+module.getSettingNames(); // ["When your brain goes numb"]
+```
+</details>
