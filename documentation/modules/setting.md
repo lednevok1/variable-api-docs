@@ -72,12 +72,12 @@ Setting.setVisibility("ChestStealer", "Auto close", true); // настройка
 
 **Возвращает:** ``String settingMode``
 
-**Примечание:** требует, чтобы тип настройки был ModeSetting
-
 **Пример:**
 ```js
 Setting.getCurrentMode("KillAura", "Mode"); // "Multi"
 ```
+  
+**Примечание:** требует, чтобы тип настройки был ModeSetting
 </details>
 
 ## `Setting.getCurrentValue(String moduleName, String settingName);`
@@ -91,7 +91,7 @@ Setting.getCurrentMode("KillAura", "Mode"); // "Multi"
 | String moduleName | Название модуля |
 | String settingName | Название настройки |
 
-**Возвращает:** Double settingValue
+**Возвращает:** ``Double settingValue``
 
 **Пример:**
 ```js
@@ -113,7 +113,7 @@ Setting.getCurrentValue("Coordinates", "Pos X"); // 0.5
 | String moduleName | Название модуля |
 | String settingName | Название настройки |
 
-**Возвращает:** String settingText
+**Возвращает:** ``String settingText``
 
 **Пример:**
 ```js
@@ -135,7 +135,7 @@ Setting.getCurrentValue("Spammer", "Text"); // "Variable - the best mcpe hacked 
 | String moduleName | Название модуля |
 | String settingName | Название настройки |
 
-**Возвращает:** Boolean isActive
+**Возвращает:** ``Boolean isActive``
 
 **Пример:**
 ```js
