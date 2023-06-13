@@ -1,9 +1,15 @@
 # Настройка (кнопка): конструктор
 ```js
-ButtonSetting(String name, Function callback);
+ButtonSetting(String name, Function callback); // функция callback с аргументом View view
 ```
-**Примечание:** ``Function callback`` имеет аргумент View view
-
+**Пример:**
+```js
+var setting = new ButtonSetting("Clear friendlist", function(view) {
+    getFriends().forEach(function(name) {
+        removeFriend(name);
+    });
+});
+```
 # Настройка (кнопка): методы
 ## ``ButtonSetting.getName();``
 **Описание:** получает имя настройки
