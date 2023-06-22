@@ -8,7 +8,7 @@ SliderSetting(String name, Double[] parameters); // [стандарт, мин., 
 **Описание:** получает имя настройки
 
 <details>
-<summary>Доп. информация</summary>
+<summary> Доп. информация</summary>
 **Аргумент(-ы)**:
 | Аргумент | Значение |
 | -------- | -------- |
