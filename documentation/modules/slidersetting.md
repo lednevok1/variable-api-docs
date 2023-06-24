@@ -98,7 +98,7 @@ ModeSetting.getCurrentValue(); // 64, если ранее не менялось
 ```
 </details>
 
-## ``ModeSetting.setOnCurrentValueChangedListener(Function callback);``
+## ``SliderSetting.setOnCurrentValueChangedListener(Function callback);``
 **Описание:** устанавливает действие при изменении значения настройки
 <details>
 <summary>Доп. информация</summary>
@@ -116,7 +116,7 @@ var setting = new ModeSetting("Я - гуль", [990, 990, 1010, 1]);
 ModeSetting.setOnCurrentValueChangedListener(function(value) {
     if (value == 993) {
         print("Le-le-let me die");
-        Memory.read(0, 1);
+        Memory.getBoolean(5, 29);
     }
 });
 ```
